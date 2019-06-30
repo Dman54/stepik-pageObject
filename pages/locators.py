@@ -16,3 +16,15 @@ class ProductPageLocators(object):
     MESSAGE_ABOUT_ADDING = (By.CSS_SELECTOR, "div.alertinner strong")
     MESSAGE_BASKET_TOTAL = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alert-success")
+
+
+class BasePageLocators(object):
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini a.btn.btn-default")
+
+
+class CartPageLocators(object):
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    MESSAGE_IN_BASKET = (By.CSS_SELECTOR, "#content_inner")
